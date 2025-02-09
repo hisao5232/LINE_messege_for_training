@@ -3,6 +3,7 @@ name: LINE Message
 on:
   schedule:
     - cron: '40 5 * * *'  # 毎日5時40分に実行
+  workflow_dispatch:  # 手動実行を有効にする
 
 jobs:
   send-line:
